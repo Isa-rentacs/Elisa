@@ -1,0 +1,15 @@
+<html>
+<head/>
+<body>
+<div id="text" style="width:100%;height:100vh;text-align:center;padding-top:25vh;font-size:20rem;"></div>
+<script type="text/javascript" >
+    (function() {
+        textElement = document.getElementById("text");
+        textElement.onclick = function()
+        {
+            textElement.innerHTML = Math.floor((Math.random() * 90) + 10);
+        }
+    })();
+</script>
+</body>    
+</html>
