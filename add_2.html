@@ -1,0 +1,28 @@
+<html>
+<head/>
+<body>
+<div id="text" style="width:100%;height:100vh;text-align:center;padding-top:25vh;font-size:20rem;"></div>
+<script type="text/javascript" >
+    (function() {
+        textElement = document.getElementById("text");
+        textElement.onclick = function()
+        {
+            var tmp = 0;
+            is_first_term_ok = false;
+            is_second_term_ok = false;
+            while (!(is_first_term_ok && is_second_term_ok)){
+                var first_term = Math.floor(Math.random() * 20);
+                var second_term = Math.floor(Math.random() * 9) + 1;
+                is_first_term_ok = (10 < first_term) && (first_term < 20);
+                is_second_term_ok = (0 < second_term) && (second_term < 10);
+            }
+            if (Math.random() < 0.5) {
+                textElement.innerHTML = first_term + " + " + second_term;
+            } else {
+                textElement.innerHTML = second_term + " + " + first_term;
+            }
+        }
+    })();
+</script>
+</body>    
+</html>
