@@ -11,9 +11,9 @@
             is_first_term_ok = false;
             is_second_term_ok = false;
             while (!(is_first_term_ok && is_second_term_ok)){
-                var first_term = Math.floor(Math.random() * 20);
+                var first_term = Math.floor(Math.random() * 30);
                 var second_term = Math.floor(Math.random() * 9) + 1;
-                is_first_term_ok = (10 < first_term) && (first_term < 20);
+                is_first_term_ok = (10 < first_term) && (first_term < 30);
                 is_second_term_ok = (0 < second_term) && (second_term < 10);
             }
             if (Math.random() < 0.5) {
